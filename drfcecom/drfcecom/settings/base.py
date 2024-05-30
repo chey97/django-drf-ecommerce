@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # External Packages
     "rest_framework",
-    #Internal Apps
+    # Internal Apps
 ]
 
 MIDDLEWARE = [
