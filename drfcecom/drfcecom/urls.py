@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from drfcecom.product import views
@@ -8,6 +9,7 @@ router = DefaultRouter()
 router.register("category", views.CategoryViewSet)
 router.register("product", views.ProductViewSet)
 router.register("brand", views.BrandViewSet)
+router.register("productline", views.ProductLineViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
